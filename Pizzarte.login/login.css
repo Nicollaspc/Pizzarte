@@ -24,7 +24,6 @@ body{
 
 .esquerda{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -37,6 +36,8 @@ body{
     font-weight: bold;
     font-family: "Lobster", sans-serif;
     color: rgb(77, 9, 9);
+    text-decoration: underline;
+    text-decoration-color: #0f7a33;
 }
 
 
@@ -58,6 +59,7 @@ body{
     height: 100%;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
+    padding-left: 20px;
 }
 
 
@@ -186,3 +188,126 @@ button{
 button:hover{
     cursor: pointer;
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .esquerda, .direita {
+        flex: 100%;
+        height: auto;
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+    .esquerda h1 {
+        font-size: 4rem;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .direita {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .area-login {
+        width: 95%;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .login {
+        width: 100%;
+        height: auto;
+    }
+
+    .email,.senha {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .email input,.senha input {
+        font-size: 1rem;
+    }
+
+    .area-login > h1 {
+        font-size: 2rem;
+        margin-top: 1rem;
+        padding-right: 0;
+    }
+
+    button {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        padding: 2rem;
+        height: auto;
+    }
+
+    .esquerda, .direita {
+        flex: 100%;
+        height: auto;
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .esquerda h1 {
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    .area-login {
+        width: 95%;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .login {
+        width: 100%;
+        height: auto;
+    }
+
+    .email,
+    .senha {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .email input,
+    .senha input {
+        font-size: 1rem;
+    }
+
+    .area-login > h1 {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        padding: 0;
+        text-align: center;
+    }
+
+    button {
+        width: 80%;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+

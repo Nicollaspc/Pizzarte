@@ -37,6 +37,8 @@ body{
     font-weight: bold;
     font-family: "Lobster", sans-serif;
     color: rgb(77, 9, 9);
+    text-decoration: underline;
+    text-decoration-color: #0f7a33;
 }
 
 
@@ -58,6 +60,8 @@ body{
     height: 100%;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
+    padding-left: 20px; /* */
+    
 }
 
 
@@ -66,14 +70,16 @@ body{
     color: rgb(77, 9, 9);
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-    padding-right: 20px;
 }
 
 .login{
     display: flex;
+    text-align: center;
+    justify-content: center;
     flex-direction: column;
     width: 350px;
     height: 250px;
+    padding-left: 20px;
 }
 
 .nome{
@@ -231,4 +237,90 @@ button{
 
 button:hover{
     cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 18px;
+   
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .esquerda,.direita {
+    width: 100%;
+    flex: 100%;
+    height: auto;
+  }
+
+  .esquerda h1 {
+    font-size: 3.2rem;
+  }
+
+  .area-login {
+    margin-top: 50px;
+    width: 90%;
+    height: auto;
+    padding: 30px 30px;
+  }
+
+  .area-login > h1 {
+    font-size: 30px;
+  }
+
+  .login,.nome,.email,.senha,.Confirmar-Senha {
+  }
+
+  button {
+    width: 50%;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 24px;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: 60px 0;
+  }
+
+  .esquerda,.direita {
+    flex: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .esquerda h1 {
+    font-size: 4.5rem;
+    padding-right: 20px;
+  }
+
+  .area-login {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    margin-top: 50px;
+  }
+
+  .login {
+    width: 100%;
+  }
+
+  .nome,.email,.senha,.Confirmar-Senha {
+    width: 100%;
+  }
+
+  button {
+    width: 150px;
+  }
 }

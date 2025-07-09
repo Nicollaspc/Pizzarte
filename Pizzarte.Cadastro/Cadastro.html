@@ -27,12 +27,12 @@
                         <i class="fa-solid fa-envelope"></i>
                     </div>
                     <div class="senha">
-                        <input type="password" placeholder="senha">
-                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="senha" id="senha">
+                        <i class="fa-solid fa-lock" id="senhaBtn" onclick="MostrarSenhaBtn()"></i>
                     </div>
                     <div class="Confirmar-Senha">
-                        <input type="password" placeholder="Confirmar-Senha">
-
+                        <input type="password" placeholder="Confirmar-Senha" id="Confirmar-Senha">
+                        <i class="fa-solid fa-lock" id="confirmarBtn" onclick="MostrarConfirmarBtn()"></i>
                     </div>
                     <div class="botao">
                         <a href="/Pizzarte.login/login.html"><button type="submit">ENTRAR</button></a>
@@ -41,6 +41,8 @@
             </div>
         </div>
     </div>
+
+    <script src="Cadastro.js"></script>
 
 </body>
 

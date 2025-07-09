@@ -220,6 +220,14 @@ body{
     color: #6B3500;
 }
 
+.Confirmar-Senha i{
+    position: absolute;
+    right: 5px;
+    margin-right: 5px;
+    color: #6B3500;
+    cursor: pointer;
+}
+
 
 button{
     font-weight: bold;

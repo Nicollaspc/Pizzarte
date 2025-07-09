@@ -3,10 +3,10 @@
     botaoComprar.forEach((botao) => {
         botao.addEventListener("click", () => {
             Swal.fire({
-            title: "Perfeito!",
-            text: "Voce adicionou o seu pedido ao CARRINHO!",
-            icon: "success",
-            timer: 2000
+                title: "Perfeito!",
+                text: "Voce adicionou o seu pedido ao CARRINHO!",
+                icon: "success",
+                timer: 2000
             });
         })
     })
